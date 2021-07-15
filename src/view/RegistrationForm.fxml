@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="528.0" prefWidth="644.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RegistrationFormController">
+   <children>
+      <Label layoutX="20.0" layoutY="18.0" prefHeight="26.0" prefWidth="262.0" text="Registration Form" textFill="#5e1aa1">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="72.0" prefHeight="22.0" prefWidth="104.0" text="Regitration No">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtId" layoutX="130.0" layoutY="71.0" prefHeight="25.0" prefWidth="125.0" />
+      <Label layoutX="24.0" layoutY="114.0" prefHeight="22.0" prefWidth="104.0" text="Student Id">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="155.0" prefHeight="22.0" prefWidth="104.0" text="Course Code">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="395.0" layoutY="73.0" prefHeight="22.0" prefWidth="50.0" text="Date">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtContact" layoutX="445.0" layoutY="71.0" prefHeight="25.0" prefWidth="181.0" />
+      <JFXButton buttonType="RAISED" layoutX="518.0" layoutY="225.0" onAction="#btnSaveOnAction" prefHeight="29.0" prefWidth="112.0" style="-fx-background-color: #85BD26;" text="Register" textFill="#f5efef">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="tblStudent" layoutX="12.0" layoutY="269.0" prefHeight="249.0" prefWidth="623.0">
+         <columns>
+            <TableColumn fx:id="colId" prefWidth="93.0" text="Reg.No" />
+            <TableColumn fx:id="colName" prefWidth="97.0" text="Date" />
+            <TableColumn fx:id="colAddress" prefWidth="130.0" text="Fee" />
+            <TableColumn fx:id="colContact" prefWidth="93.0" text="Id" />
+            <TableColumn fx:id="colDob" prefWidth="107.0" text="code" />
+            <TableColumn fx:id="colOperate" prefWidth="102.0" text="Operate" />
+         </columns>
+      </TableView>
+      <Label layoutX="24.0" layoutY="203.0" prefHeight="22.0" prefWidth="104.0" text="Course Fee">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtAddress1" layoutX="20.0" layoutY="227.0" prefHeight="25.0" prefWidth="112.0" />
+      <ComboBox layoutX="132.0" layoutY="113.0" prefHeight="25.0" prefWidth="118.0" />
+      <ComboBox layoutX="133.0" layoutY="154.0" prefHeight="25.0" prefWidth="118.0" />
+   </children>
+</AnchorPane>

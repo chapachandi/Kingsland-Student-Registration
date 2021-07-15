@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="root" prefHeight="528.0" prefWidth="644.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CourseFormController">
+   <children>
+      <Label layoutX="14.0" layoutY="26.0" prefHeight="27.0" prefWidth="169.0" text="Course Form" textFill="#16219e">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="81.0" prefHeight="22.0" prefWidth="104.0" text="Code">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCode" layoutX="24.0" layoutY="102.0" prefHeight="25.0" prefWidth="104.0" />
+      <Label layoutX="136.0" layoutY="81.0" prefHeight="22.0" prefWidth="104.0" text="Course Name">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCourseName" layoutX="136.0" layoutY="102.0" prefHeight="25.0" prefWidth="128.0" />
+      <Label layoutX="405.0" layoutY="81.0" prefHeight="22.0" prefWidth="104.0" text="Duration">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtDuration" layoutX="405.0" layoutY="102.0" prefHeight="25.0" prefWidth="147.0" />
+      <Label layoutX="272.0" layoutY="81.0" prefHeight="22.0" prefWidth="104.0" text="Course Type">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCourseType" layoutX="271.0" layoutY="102.0" prefHeight="25.0" prefWidth="128.0" />
+      <TextField fx:id="txtSearch" layoutX="24.0" layoutY="145.0" prefHeight="25.0" prefWidth="526.0" promptText="Search" />
+      <JFXButton buttonType="RAISED" layoutX="556.0" layoutY="143.0" onAction="#btnSaveOnAction" prefHeight="8.0" prefWidth="86.0" style="-fx-background-color: #85BD26;" text="Save" textFill="#f5efef">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="tblCourse" layoutX="13.0" layoutY="209.0" prefHeight="319.0" prefWidth="623.0">
+         <columns>
+            <TableColumn fx:id="colCode" prefWidth="93.0" text="Code" />
+            <TableColumn fx:id="colCourseName" prefWidth="152.0" text="Course Name" />
+            <TableColumn fx:id="colCourseType" prefWidth="152.0" text="Course Type" />
+            <TableColumn fx:id="colDeuration" prefWidth="102.0" text="Duration" />
+            <TableColumn fx:id="colOperate" prefWidth="123.0" text="Operate" />
+         </columns>
+      </TableView>
+      <Separator layoutY="182.0" prefHeight="8.0" prefWidth="644.0" />
+   </children>
+</AnchorPane>
